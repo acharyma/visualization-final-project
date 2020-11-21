@@ -8,7 +8,7 @@ var currentSort;
 
 var clickedDistrict = "";
 
-Promise.all([d3.json("/nepal.json"),
+Promise.all([d3.json("nepal.json"),
 d3.csv('life-expectancy-income_2019.csv', d3.autoType)]).then(([map, data])=>{
     console.log(data);
     
