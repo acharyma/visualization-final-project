@@ -18,6 +18,8 @@ export default function LineChart(container){
     function update(data, districtSet) {   
         var selectedDistrict = districtSet ?? "Kathmandu"
 
+        //TODO:- Clear the graph before
+
 
 
 
@@ -99,6 +101,14 @@ export default function LineChart(container){
             .attr("y", height - 6)
             .text("Grade")
             .style("font-size", "13px");
+
+            svg.append("text")
+            .attr("x", (width / 2))             
+            .attr("y", 20)
+            .attr("text-anchor", "middle")  
+            .style("font-size", "16px") 
+            .style("text-decoration", "underline")  
+            .text("Dropout Rates by Grade of the District of " + selectedDistrict);
 
         
 
