@@ -14,6 +14,31 @@ export default function LineChart(container){
     .append("g")
     .attr("transform",
       "translate(" + margin.left + "," + margin.top + ")");
+    var fakeData = {grades:[0,1,2], gradeNumber: [0,1,2]}
+
+
+    // Add the line
+    svg.append("path")
+    .datum(fakeData)
+    .attr("class", "line")
+
+    svg.append("text")
+    .attr("class", "y-label")
+
+    svg.append("text")
+    .attr("class", "x-label")
+
+    svg.append("text")
+    .attr("class", "title")
+
+    svg.append("g")
+    .attr("class", "xAxis")
+
+    svg.append("g")
+    .attr("class", "yAxis")
+
+      
+
 
     function update(data, districtSet) {   
         var selectedDistrict = districtSet ?? "Kathmandu"
@@ -58,7 +83,7 @@ export default function LineChart(container){
             .range([ 0, width ]);
         console.log(d3.extent(gradeNumber))
 
-        svg.append("g")
+        svg.select(".xAxis")
             .attr("transform", "translate(0," + height + ")")
             .call(d3.axisBottom(xScale));
 
@@ -68,12 +93,14 @@ export default function LineChart(container){
             .range([ height, 0 ]);
         console.log([0,d3.max(grades)]);
 
-        svg.append("g")
+        svg.select(".yAxis")
+            .attr("class", "yAxis")
             .call(d3.axisLeft(yScale));
 
         // Add the line
-        svg.append("path")
+        svg.select(".line")   // change the line
         .datum(formattedData)
+        .attr("class", "line")
         .attr("fill", "none")
         .attr("stroke", "orange")
         .attr("stroke-width", 5)
@@ -85,8 +112,7 @@ export default function LineChart(container){
         
 
 
-        svg.append("text")
-            .attr("class", "y label")
+        svg.select(".y-label")
             .attr("text-anchor", "end")
             .attr("y",8)
             .attr("dy", "6px")
@@ -94,15 +120,14 @@ export default function LineChart(container){
             .text("Drop-out Rate")
             .style("font-size", "13px");
 
-        svg.append("text")
-            .attr("class", "x label")
+        svg.select(".x-label")
             .attr("text-anchor", "end")
             .attr("x", width)
             .attr("y", height - 6)
             .text("Grade")
             .style("font-size", "13px");
 
-            svg.append("text")
+        svg.select("title")
             .attr("x", (width / 2))             
             .attr("y", 20)
             .attr("text-anchor", "middle")  

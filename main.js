@@ -7,6 +7,7 @@ var sortedTwo;
 var currentSort;
 
 var clickedDistrict = "";
+var listOfDistricts = [];
 
 Promise.all([d3.json("nepal.json"),
 d3.csv('life-expectancy-income_2019.csv', d3.autoType)]).then(([map, data])=>{
@@ -16,85 +17,12 @@ d3.csv('life-expectancy-income_2019.csv', d3.autoType)]).then(([map, data])=>{
     let domainLife = d3.extent(data, (d => d.lifeExp));
     let domainIncome = d3.extent(data, (d => d.incomePerCapita));
 
-    //MAP STUFF
-
-    
-    const topology = topojson.feature(map, map.objects.NPL_adm3);
-    console.log(topology);
-
-    const features = topology.features;
-    console.log(features);
-
-    const margin = {top: 10, right: 30, bottom: 30, left: 60},
-    width = 700 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
-
-    // const projection = d3.geoAlbers()
-    // .fitExtent([[0,0], [width, height]], topology);
-
-    
-    // const path = d3.geoPath().projection(projection);
-    // var width = 1500,
-    // height = 1500;
-
-    var projection = d3.geoAlbers()
-        // .center([86, 28])
-        // .rotate([4.4, 0])
-        // .parallels([27, 32]);
-        .center([86,28])
-        .rotate([4.4,0])
-        .translate([width/2.9, height/2.0])
-        // .scale(k)
-
-    var path = d3.geoPath()
-        .projection(projection);
-    var districts = features;
-
-    
-
-
-    
-
-    const svg = d3.select(".chart-container3").append("svg")
-        .attr("viewBox", [0,0,width,height]);
-    
-    svg.selectAll("path")
-    .data(features)
-    .join("path")
-    .attr("d", path)
-    .attr("fill", "gray")
-    .on("mouseover", (l, d) => {
-        console.log("enterred");
-        d3.select(event.currentTarget).style("fill", "red");
-    })
-    .on("mouseout", (l, d) => {
-        console.log("left");
-        d3.select(event.currentTarget).style("fill", "gray");
-    })
-    .on("click", (event,d) => {
-        console.log(d);
-        d3.select(event.currentTarget).style("stroke", "blue").style("stroke-width", "0.47px");
-
-    });
-    ;
-
-    svg
-    .transition()
-    .duration(3000)
-    .ease(d3.easeLinear)
-    // .attr("transform", "scale(2)")
-    .attr("transform", "translate(100,100) rotate(45) scale(2)" )
-    .transition()
-    .duration(3000)
-    .ease(d3.easeLinear);
-
-
-
-    //END OF MAP STUFF
 
 
     console.log(domainLife);
     console.log(domainIncome);
+
+    const rm = RegionalMap(".chart-container3");
 
     //Not sure if we will use this yet
     
@@ -113,12 +41,25 @@ d3.csv('life-expectancy-income_2019.csv', d3.autoType)]).then(([map, data])=>{
         bg.newOn("clicked", (clicked) => {
             clickedDistrict = clicked;
             console.log("clickedDistrict on main!! " + clicked);
+            if(!listOfDistricts.includes(clicked)){
+                listOfDistricts.push(clicked);
+                console.log(listOfDistricts)
+            }
             lc.update(data2, clicked);
+            // rm.update(map, listOfDistricts);
         })
         
     });
 
     console.log(map);
+    document.getElementById("reveal").addEventListener("click", function() {
+        
+        rm.update(map, listOfDistricts);
+        document.getElementById("reveal").innerHTML = "Displaying the Map";
+    });
+    
+
+    
 
 
     sortedOne = data.sort((a, b) => (returnInt(a.incomePerCapita) > returnInt(b.incomePerCapita)) ? 1 : -1).reverse();
@@ -132,8 +73,7 @@ d3.csv('life-expectancy-income_2019.csv', d3.autoType)]).then(([map, data])=>{
     });
 
 
-    const rm = RegionalMap(".chart-container3");
-    rm.update(data);
+    
 
 
 });

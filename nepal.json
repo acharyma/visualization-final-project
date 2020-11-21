@@ -5983,7 +5983,7 @@
                    "ID_3":1,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":"Bhadgaon| Khwopa|Bhaktapur Jilla"
+                   "VARNAME_3":"Bhaktapur"
                 }
              },
              {
@@ -6009,7 +6009,7 @@
                    "ID_3":2,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Dhading"
                 }
              },
              {
@@ -6035,7 +6035,7 @@
                    "ID_3":3,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":"KTM"
+                   "VARNAME_3":"Kathmandu"
                 }
              },
              {
@@ -6061,7 +6061,7 @@
                    "ID_3":4,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":"Kavrepalanchowk, Kavreplanchok"
+                   "VARNAME_3":"Kavrepalanchok"
                 }
              },
              {
@@ -6084,7 +6084,7 @@
                    "ID_3":5,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":"Patan"
+                   "VARNAME_3":"Lalitpur"
                 }
              },
              {
@@ -6107,7 +6107,7 @@
                    "ID_3":6,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Nuwakot"
                 }
              },
              {
@@ -6130,7 +6130,7 @@
                    "ID_3":7,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Rasuwa"
                 }
              },
              {
@@ -6156,7 +6156,7 @@
                    "ID_3":8,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Sindhupalchok"
                 }
              },
              {
@@ -6180,7 +6180,7 @@
                    "ID_3":9,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":"Dhanusha"
+                   "VARNAME_3":"Dhanusa"
                 }
              },
              {
@@ -6203,7 +6203,7 @@
                    "ID_3":10,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":"Dolkha"
+                   "VARNAME_3":"Dolakha"
                 }
              },
              {
@@ -6226,7 +6226,7 @@
                    "ID_3":11,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":"Mahotari"
+                   "VARNAME_3":"Mahottari"
                 }
              },
              {
@@ -6251,7 +6251,7 @@
                    "ID_3":12,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":"Ramechap"
+                   "VARNAME_3":"Ramechhap"
                 }
              },
              {
@@ -6274,7 +6274,7 @@
                    "ID_3":13,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Sarlahi"
                 }
              },
              {
@@ -6302,7 +6302,7 @@
                    "ID_3":14,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Sindhuli"
                 }
              },
              {
@@ -6325,7 +6325,7 @@
                    "ID_3":15,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Bara"
                 }
              },
              {
@@ -6351,7 +6351,7 @@
                    "ID_3":16,
                    "TYPE_3":"",
                    "ENGTYPE_3":"",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Chitwan"
                 }
              },
              {
@@ -6379,7 +6379,7 @@
                    "ID_3":17,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":"Makawanpur"
+                   "VARNAME_3":"Makwanpur"
                 }
              },
              {
@@ -6402,7 +6402,7 @@
                    "ID_3":18,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Parsa"
                 }
              },
              {
@@ -6426,7 +6426,7 @@
                    "ID_3":19,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Rautahat"
                 }
              },
              {
@@ -6450,7 +6450,7 @@
                    "ID_3":20,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Bhojpur"
                 }
              },
              {
@@ -6476,7 +6476,7 @@
                    "ID_3":21,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Dhankuta"
                 }
              },
              {
@@ -6501,7 +6501,7 @@
                    "ID_3":22,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Morang"
                 }
              },
              {
@@ -6526,7 +6526,7 @@
                    "ID_3":23,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Sankhuwasabha"
                 }
              },
              {
@@ -6550,7 +6550,7 @@
                    "ID_3":24,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Sunsari"
                 }
              },
              {
@@ -6573,7 +6573,7 @@
                    "ID_3":25,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":"Terathum"
+                   "VARNAME_3":"Tehrathum"
                 }
              },
              {
@@ -6596,7 +6596,7 @@
                    "ID_3":26,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Ilam"
                 }
              },
              {
@@ -6618,7 +6618,7 @@
                    "ID_3":27,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Jhapa"
                 }
              },
              {
@@ -6643,7 +6643,7 @@
                    "ID_3":28,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":"Panchathar"
+                   "VARNAME_3":"Panchthar"
                 }
              },
              {
@@ -6666,7 +6666,7 @@
                    "ID_3":29,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Taplejung"
                 }
              },
              {
@@ -6689,7 +6689,7 @@
                    "ID_3":30,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Khotang"
                 }
              },
              {
@@ -6713,7 +6713,7 @@
                    "ID_3":31,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Okhaldhunga"
                 }
              },
              {
@@ -6736,7 +6736,7 @@
                    "ID_3":32,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Saptari"
                 }
              },
              {
@@ -6759,7 +6759,7 @@
                    "ID_3":33,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Siraha"
                 }
              },
              {
@@ -6785,7 +6785,7 @@
                    "ID_3":34,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":"Solukhombu"
+                   "VARNAME_3":"Solukhumbu"
                 }
              },
              {
@@ -6813,7 +6813,7 @@
                    "ID_3":35,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":"Udaypur"
+                   "VARNAME_3":"Udayapur"
                 }
              },
              {
@@ -6837,7 +6837,7 @@
                    "ID_3":36,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Baitadi"
                 }
              },
              {
@@ -6861,7 +6861,7 @@
                    "ID_3":37,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":"Dadelhura|Dadheldhura"
+                   "VARNAME_3":"Dadeldhura"
                 }
              },
              {
@@ -6883,7 +6883,7 @@
                    "ID_3":38,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Darchula"
                 }
              },
              {
@@ -6905,7 +6905,7 @@
                    "ID_3":39,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Kanchanpur"
                 }
              },
              {
@@ -6929,7 +6929,7 @@
                    "ID_3":40,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Achham"
                 }
              },
              {
@@ -6954,7 +6954,7 @@
                    "ID_3":41,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Bajhang"
                 }
              },
              {
@@ -6979,7 +6979,7 @@
                    "ID_3":42,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Bajura"
                 }
              },
              {
@@ -7005,7 +7005,7 @@
                    "ID_3":43,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Doti"
                 }
              },
              {
@@ -7030,7 +7030,7 @@
                    "ID_3":44,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Kailali"
                 }
              },
              {
@@ -7053,7 +7053,7 @@
                    "ID_3":45,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Banke"
                 }
              },
              {
@@ -7077,7 +7077,7 @@
                    "ID_3":46,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":"Bardia"
+                   "VARNAME_3":"Bardiya"
                 }
              },
              {
@@ -7100,7 +7100,7 @@
                    "ID_3":47,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Dailekh"
                 }
              },
              {
@@ -7126,7 +7126,7 @@
                    "ID_3":48,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Jajarkot"
                 }
              },
              {
@@ -7152,7 +7152,7 @@
                    "ID_3":49,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Surkhet"
                 }
              },
              {
@@ -7178,7 +7178,7 @@
                    "ID_3":50,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Dolpa"
                 }
              },
              {
@@ -7201,7 +7201,7 @@
                    "ID_3":51,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Humla"
                 }
              },
              {
@@ -7224,7 +7224,7 @@
                    "ID_3":52,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Jumla"
                 }
              },
              {
@@ -7249,7 +7249,7 @@
                    "ID_3":53,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Kalikot"
                 }
              },
              {
@@ -7274,7 +7274,7 @@
                    "ID_3":54,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Mugu"
                 }
              },
              {
@@ -7300,7 +7300,7 @@
                    "ID_3":55,
                    "TYPE_3":"",
                    "ENGTYPE_3":"",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Dang"
                 }
              },
              {
@@ -7324,7 +7324,7 @@
                    "ID_3":56,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Pyuthan"
                 }
              },
              {
@@ -7348,7 +7348,7 @@
                    "ID_3":57,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Rolpa"
                 }
              },
              {
@@ -7373,7 +7373,7 @@
                    "ID_3":58,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Rukum"
                 }
              },
              {
@@ -7399,7 +7399,7 @@
                    "ID_3":59,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Salyan"
                 }
              },
              {
@@ -7424,7 +7424,7 @@
                    "ID_3":60,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Baglung"
                 }
              },
              {
@@ -7447,7 +7447,7 @@
                    "ID_3":61,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Mustang"
                 }
              },
              {
@@ -7473,7 +7473,7 @@
                    "ID_3":62,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Myagdi"
                 }
              },
              {
@@ -7497,7 +7497,7 @@
                    "ID_3":63,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":"Parwat"
+                   "VARNAME_3":"Parbat"
                 }
              },
              {
@@ -7522,7 +7522,7 @@
                    "ID_3":64,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Gorkha"
                 }
              },
              {
@@ -7547,7 +7547,7 @@
                    "ID_3":65,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Kaski"
                 }
              },
              {
@@ -7570,7 +7570,7 @@
                    "ID_3":66,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Lamjung"
                 }
              },
              {
@@ -7595,7 +7595,7 @@
                    "ID_3":67,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Manang"
                 }
              },
              {
@@ -7619,7 +7619,7 @@
                    "ID_3":68,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":"Syanja"
+                   "VARNAME_3":"Syangja"
                 }
              },
              {
@@ -7645,7 +7645,7 @@
                    "ID_3":69,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":"Tanahun"
+                   "VARNAME_3":"Tanahu"
                 }
              },
              {
@@ -7670,7 +7670,7 @@
                    "ID_3":70,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":"Argakhachi"
+                   "VARNAME_3":"Arghakhanchi"
                 }
              },
              {
@@ -7695,7 +7695,7 @@
                    "ID_3":71,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Gulmi"
                 }
              },
              {
@@ -7718,7 +7718,7 @@
                    "ID_3":72,
                    "TYPE_3":"",
                    "ENGTYPE_3":"",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Kapilbastu"
                 }
              },
              {
@@ -7742,7 +7742,7 @@
                    "ID_3":73,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Nawalparasi"
                 }
              },
              {
@@ -7767,7 +7767,7 @@
                    "ID_3":74,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Palpa"
                 }
              },
              {
@@ -7791,7 +7791,7 @@
                    "ID_3":75,
                    "TYPE_3":"Jilla",
                    "ENGTYPE_3":"District",
-                   "VARNAME_3":""
+                   "VARNAME_3":"Rupandehi"
                 }
              }
           ]
