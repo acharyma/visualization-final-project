@@ -73,6 +73,8 @@ d3.csv('life-expectancy-income_2019.csv', d3.autoType)]).then(([map, data])=>{
     })
     .on("click", (event,d) => {
         console.log(d);
+        d3.select(event.currentTarget).style("stroke", "blue").style("stroke-width", "0.47px");
+
     });
     ;
 
