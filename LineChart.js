@@ -29,7 +29,7 @@ export default function LineChart(container){
     .attr("class", "x-label")
 
     svg.append("text")
-    .attr("class", "title")
+    .attr("class", "title-for-graph")
 
     svg.append("g")
     .attr("class", "xAxis")
@@ -127,7 +127,7 @@ export default function LineChart(container){
             .text("Grade")
             .style("font-size", "13px");
 
-        svg.select("title")
+        svg.select(".title-for-graph")
             .attr("x", (width / 2))             
             .attr("y", 20)
             .attr("text-anchor", "middle")  
