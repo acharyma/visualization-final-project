@@ -54,7 +54,7 @@ d3.csv('life-expectancy-income_2019.csv', d3.autoType)]).then(([map, data])=>{
     console.log(map);
     document.getElementById("reveal").addEventListener("click", function() {
         
-        rm.update(map, listOfDistricts);
+        rm.update(map, listOfDistricts, data);
         document.getElementById("reveal").innerHTML = "Displaying the Map";
     });
     

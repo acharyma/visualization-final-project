@@ -4,10 +4,11 @@ export default function barGraph(container){
     
     let margin = { top: 40, right: 20, bottom: 40, left: 90 },
     width =
-        document.querySelector(container).clientWidth -
+        1000 -
         margin.left -
         margin.right,
-    height = 600 - margin.top - margin.bottom;
+    height = 300 - margin.top - margin.bottom;
+    var districts = []
     
 
     width = width > 1500 ? 1500 : width;
@@ -98,9 +99,13 @@ export default function barGraph(container){
           return height - y(returnInt(d.incomePerCapita));
         })
         .attr("width",x.bandwidth())
+        .style("stroke", (d) => (districts.includes(d.district)) ? "blue" : "none")
+        .style("stroke-width", "1.0px")
         .on("click", (event,d) => {
             console.log(d.district);
             clicked(d.district);
+            districts.push(d.district)
+            d3.select(event.currentTarget).style("stroke", "blue").style("stroke-width", "1.0px");
         });
         
         //DRAW AXIS

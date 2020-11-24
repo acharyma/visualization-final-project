@@ -23,7 +23,7 @@ export default function RegionalMap(container){
     
 
 
-    function update(map , listOfSelected) {
+    function update(map , listOfSelected, data) {
         console.log("update was called with " + map + " on container " + container);
         const topology = topojson.feature(map, map.objects.NPL_adm3);
         console.log(topology);
@@ -36,6 +36,7 @@ export default function RegionalMap(container){
         var districts = features;
 
         console.log("list on regional map is " + listOfSelected);
+        console.log(data);
 
     
 
@@ -46,6 +47,7 @@ export default function RegionalMap(container){
             .attr("viewBox", [0,0,width,height]);
         
         svg.selectAll("path")
+        .attr("class", "map-class")
         .data(features)
         .join("path")
         .attr("d", path)
@@ -54,17 +56,46 @@ export default function RegionalMap(container){
         .style("stroke-width", "0.47px")
         .on("mouseover", (l, d) => {
             d3.select(event.currentTarget).style("fill", "red");
+            const pos = d3.pointer(event, window);
+            d3
+                .select(".tooltip")
+                .style("position", "fixed")
+                .style("left", 300 + "px")
+                .style("top", 300 + "px")
+                .style("padding", 5 + "px")
+                .style("background", "darkgrey")
+                .style("font-size", "9px")
+                .style("display", "block").html(`
+                    <div>
+                    <span>
+                    District:</span>
+                    <span>
+                    ${d.properties.VARNAME_3}</span>
+                    </div>
+
+                    <div>
+                    <span>
+                    Region:</span>
+                    <span>
+                    ${d.properties.NAME_1}</span>
+                    </div>
+
+                    
+            `);
         })
         .on("mouseout", (l, d) => {
             d3.select(event.currentTarget).style("fill", "gray");
+            d3.select(".tootltip").style("display", "none");
+            document.querySelector(".tooltip").style = "none"
         })
         .on("click", (event,d) => {
             console.log(d);
             console.log(d.properties.VARNAME_3);
-            d3.select(event.currentTarget).style("stroke", "blue").style("stroke-width", "0.47px");
+            d3.select(event.currentTarget).style("stroke", "red").style("stroke-width", "0.47px");
 
         });
         ;
+
 
         svg
         .transition()
