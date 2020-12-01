@@ -1,7 +1,7 @@
 import TopBarGraph from './TopBarGraph.js';
 import LineChart from './LineChart.js';
 import RegionalMap from './RegionalMap.js'
-import Legend from './legend.js';
+import Legend from './Legend.js';
 
 var sortedOne;
 var sortedTwo;
