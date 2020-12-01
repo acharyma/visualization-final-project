@@ -1,6 +1,7 @@
 import TopBarGraph from './TopBarGraph.js';
 import LineChart from './LineChart.js';
 import RegionalMap from './RegionalMap.js'
+import Legend from './legend.js';
 
 var sortedOne;
 var sortedTwo;
@@ -31,6 +32,22 @@ d3.csv('life-expectancy-income_2019.csv', d3.autoType)]).then(([map, data])=>{
     bg.update(data);
     bg.axis(); //THIS SETS the axis to rotate after render
 
+    const legend = Legend(".legend-container")
+
+    
+
+    console.log(map);
+    document.getElementById("reveal").addEventListener("click", function() {
+
+        document.querySelector(".temporary-hidden").style.display = "block";
+        document.getElementById("temporary-hidden").style.display = "block";
+
+        legend.update();
+        
+        rm.update(map, listOfDistricts, data);
+        document.getElementById("reveal").innerHTML = "Displaying the Map";
+
+    });
     
 
     d3.csv("dropout_rates_2011-012.csv", d3.autoType).then(data2=>{
@@ -48,22 +65,23 @@ d3.csv('life-expectancy-income_2019.csv', d3.autoType)]).then(([map, data])=>{
             lc.update(data2, clicked);
             // rm.update(map, listOfDistricts);
         })
+
+        rm.newOn("clicked", (clicked) => {
+            clickedDistrict = clicked;
+            lc.update(data2, clicked);
+        })
+
+
         
     });
 
-    console.log(map);
-    document.getElementById("reveal").addEventListener("click", function() {
-        
-        rm.update(map, listOfDistricts, data);
-        document.getElementById("reveal").innerHTML = "Displaying the Map";
-    });
+    
     
 
     
 
 
     sortedOne = data.sort((a, b) => (returnInt(a.incomePerCapita) > returnInt(b.incomePerCapita)) ? 1 : -1).reverse();
-    // sortedTwo = data.sort((a, b) => (returnInt(a.incomePerCapita) > returnInt(b.incomePerCapita)) ? 1 : -1);
     currentSort = sortedOne;
 
     document.getElementById("sort").addEventListener("click", function() {

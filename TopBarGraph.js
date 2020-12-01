@@ -93,19 +93,18 @@ export default function barGraph(container){
         .attr("y", function(d) {
           return y(returnInt(d.incomePerCapita));
         })
-        // function (d){ return colorScale(d[colorColumn]); }
-        .attr("fill", "#8B0000")
+        .attr("fill", "#40048d")
         .attr("height", function(d) {
           return height - y(returnInt(d.incomePerCapita));
         })
         .attr("width",x.bandwidth())
-        .style("stroke", (d) => (districts.includes(d.district)) ? "blue" : "none")
+        .style("stroke", (d) => (districts.includes(d.district)) ? "#fcb628" : "none")
         .style("stroke-width", "1.0px")
         .on("click", (event,d) => {
             console.log(d.district);
             clicked(d.district);
             districts.push(d.district)
-            d3.select(event.currentTarget).style("stroke", "blue").style("stroke-width", "1.0px");
+            d3.select(event.currentTarget).style("stroke", "#fcb628").style("stroke-width", "2.0px");
         });
         
         //DRAW AXIS
@@ -117,14 +116,24 @@ export default function barGraph(container){
         yAxisGroup = svg.select(".y-axis").call(yAxis);
 
         svg.select("text.axis-title").remove();
-        svg
-            .append("text")
-            .attr("class", "axis-title")
-            .attr("x", 47)
-            .attr("y", -15)
-            .attr("dy", ".1em")
-            .style("text-anchor", "end")
-            .text("Income Per Capita");
+        
+        svg.append("text")
+        .attr("text-anchor", "end")
+        .attr("y",8)
+        .attr("dy", "6px")
+        .attr("transform", "rotate(-90)")
+        .text("Income Per Capita")
+        .style("font-weight", "bold")
+        .style("font-size", "15px");
+
+        svg.append("text")
+        .attr("text-anchor", "end")
+        .attr("x", width - 10)
+        .attr("y", height - 6)
+        .text("District")
+        .style("fill", "black")
+        .style("font-weight", "bold")
+        .style("font-size", "18px");
 
 
     }

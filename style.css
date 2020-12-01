@@ -6,9 +6,34 @@
 }
 
 .chart-container3 {
+    position: relative;
     height: 400px;
+    margin-top: -50px;
 }
 body{
     font-family: 'Ubuntu Condensed', sans-serif;
     margin-bottom: 0px !important;
+}
+
+.temporary-hidden {
+    display: none;
+}
+
+#temporary-hidden {
+    display: none;
+}
+
+button{
+    background-color: #40048d;
+    position: relative;
+    z-index: 10;
+}
+
+.chart-container1 {
+    position: relative;
+    z-index: 10;
+}
+.chart-container2 {
+    position: relative;
+    z-index: 10;
 }

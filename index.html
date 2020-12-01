@@ -18,11 +18,11 @@
     <body>
         <div class="container">
             <div>
-                <h1 style="color: purple;"><b>High Fidelity Prototype for Group 1 Final Project</b></h1>
+                <h1 style="color: #40048d;"><b>Looking for Possible Connections between Income Per Capita, Dropout Rates, and Life Expectancy in the District of Nepal</b></h1>
                 <div><p><u>By: Yakob Kebede, Sonam Sherpa, and Manogya Acharya</u></p></div>
             </div>
 
-            <h2 style="color: purple;"><u>Background Information</u></h2>
+            <h2 style="color: #40048d;"><u>Background Information</u></h2>
 
             <div><p>
                 In Nepal, agriculture is the mainstay of the economy, providing a livelihood for three-fourths of the population and accounting for a little over one-third of GDP. (cite globaledge.msu.edu) In addition, at the district level, the ones which generate the highest revenue per capita are: Manang, Kathmandu, Mustang, Lalitpur and Solukhumbu; with the highest being Manang with $3,166 and the lowest being Bajhang with $487. 
@@ -38,16 +38,15 @@
 
            </p></div>
 
-           <h2 style="color: purple;"><u>About the Visualization</u></h2>
+           <h2 style="color: #40048d;"><u>About the Visualization</u></h2>
 
            <div>
                <p>
                    The Bar Graph plots the Income Per Capita for each of the different district in Nepal. The bar graph has a sort function that toggles between ascending and descending order.
                    When a Bar is clicked, that district gets highlighted on the bar graph, and the line chart displays the progression of dropout rates in that district throughout the different grades. We set it to default to Kathmandu, Nepal because it is the capital city/district of the country.
-                   The selected district are also saved for when the map is revealed. When the map is revealed, there is a blue outline on the selected districts (from the Bar Graph). As of now, the map only shows the region and district on hover, but once we merge the three datasets we use to one (for the final product), we will display the information about that district in full (including dropouts, total number of teachers, life expectancy, etc) when a district is clicked. We also made the border of the district red to distinguish between the interested districts and the districts actually looked at.
-                    If time permits, we want to try and get a map of the United States to compare the dropout rates in the different states and compare it with the different districts for the final project.
+                   The selected district are also saved for when the map is revealed.
                </p>
-               <h2>Click on the Bar Graph!</h2>
+               <h2>Click on the Bar Graph to see the dropout rates in the district by grade! This will also save and highlight the district when the map is revealed and on the Bar Graph as a "District of Interest"</h2>
            </div>
 
 
@@ -65,7 +64,11 @@
 
             
 
-
+            <div class="legend-container">
+                <h3 class="temporary-hidden">The following map is encoded by <b>Life Expectancy Per District</b> and the <b>"Districts of Interest"</b> from the bar graph is highlighted with the same color as the border color on the bar graph.</h3>
+                <div><p id="temporary-hidden">Clicking on the district will make the line chart above change to that district and change it's border color to indicate that that area has been investigated. Hovering over the district reveals more information about the district.</p></div>
+            </div>
+            
             <div class="chart-container3">
                 <div class="tooltip">
                     <!-- used in regional map -->
