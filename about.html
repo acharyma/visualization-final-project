@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+        <script src="https://unpkg.com/topojson@3"></script>
+
+
+
+        <script src="main.js" defer type="module"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+        />
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" />
+        <title>About This Project</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <div>
+                <h1 style="color: #40048d;"><b>Looking for Possible Connections between Income Per Capita, Dropout Rates, and Life Expectancy in the District of Nepal</b></h1>
+                <div><p><u>By: Yakob Kebede, Sonam Sherpa, and Manogya Acharya</u></p></div>
+            </div>
+            <p style="color: #40048d;"><a href="../"><u>Back to the Visualization</u></a></p>
+    
+            <h2 style="color: #40048d"><u>About The Issue</u></h2>
+    
+            <div>
+                <p>
+                Education is a vital part of everyone's life. It gives an individual a chance and prepares them to get ready to face challenges of life more efficiently. Even after knowing the value of an education, an education is still not a necessity but a luxury in Nepal. There are millions of people in the world who don't get a chance to get an education. This is a big problem. This problem can only be solved when we, us as a human see this as a problem. There are many voices that are unheard, lights that are unseen and hope that are destroyed. In this visualization project, we hope to show the importance of an education and how it is inter connected with many other other factors. 
+                <br><br>
+                
+                In Nepal, agriculture is the mainstay of the economy, providing a livelihood for three-fourths of the population and accounting for a little over one-third of GDP. (cite globaledge.msu.edu) In addition, at the district level, the ones which generate the highest revenue per capita are: Manang, Kathmandu, Mustang, Lalitpur and Solukhumbu; with the highest being Manang with $3,166 and the lowest being Bajhang with $487. 
+    
+                Another connection that we came to realize is that the less per cer capita the district had the  dropout rate was likely to increase from grade 1 to 10. If the Dritric had a high revenue per capita the dropout rate was decreasing from 1 to 10th grade.
+    
+                Moreover, to give a better understanding, we felt a comparison with the United States would be necessary. For example the highest state with income per capita is “Washington, D.C has the highest per capita personal income with $71,496 and Mississippi had the lowest per-capita real GDP, at 35,015 U.S. dollars. 
+    
+                Income inequality within Nepal takes different forms. For example, one of the driving forces is Neoliberal policies. These policies  have driven cuts to public spending and increased privatization in Nepal. As a result, public services like health and education have also seen increased privatization and commercialization in Nepal. These bring about two different consequences; for the rich it creates a circumstance where they are able to pay for and support private services. While public sector services are starved of funding and political support.
+                <a href="https://oxfamilibrary.openrepository.com/bitstream/handle/10546/620607/bp-fighting-inequality-nepal-110119-en.pdf">Source</a>
+                <br><br>These Inequalities can affect development also through its effect on the political economy of the provision of public goods. For example, in Nepal, as incomes and living standards have improved, private school enrollments have increased leaving public schools, especially in remote rural areas, struggling to fill classrooms. This weakened demand will inevitably lead to further lowering of quality of public schools, which remain the preserve of the poorest.
+                Access to education is limited by geographical constraints, poor infrastructure, social and cultural norms, and a lack of well-trained teachers. See below for the relationship dropout rates in different districts.
+                </p>
+            </div>
+
+            <h2 style="color: #40048d"><u>Our Process</u></h2>
+            <div>
+                <p>
+                    The most difficult aspect of our project was data processing. We used two seperate csv files for this project. One contained information on Life Expectancy and Income Per Capita, and the other had information on Dropout Rates by grade. Both were grouped by the district in Nepal so we knew we wanted to look at these information based on the district. On click on the bar, we added a callback that sent back to main.js the district name, and then we called the update function of the linechart with the district variable, and the OTHER dataset.
+                    <br> <br>
+                    More than processing the CSV file, the most difficult and time consuming process was going through the nepal.json file and manually adding the district names under the properties for each district. The dataset came with it's own district names under the VARNAME_3 property, but only about 5 of the districts had that property filled out. Ironically, those 5 districts were all spelt differently compared to the opennepaldata site [which was our two datasets]. So we had to click on each of the districts on the map, find it's ID number, find the district name on a map, compare the spelling to our dataset, and add the correct district name accordingly. This process needed to be meticulous to ensure no mistakes and it took a very long time to process. 
+                </p>
+
+                <p>
+                    For our design aspect, we wanted to make sure that the line chart was between the bar chart and the map, because the interactive feature of both the bar graph and the map was changing that line chart in the middle. We also had to decide on the color scheme for the website and the graphs. We liked the purple and grey scheme for the titles and the bodies. As you move further into the website, we started moving from purple towards the red/orange scale.
+                </p>
+            </div>
+            <h2 style="color: #40048d"><u>Showcase Video</u></h2>
+
+
+
+        </div>
+        
+
+    </body>
+</html>

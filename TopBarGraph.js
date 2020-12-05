@@ -99,7 +99,7 @@ export default function barGraph(container){
         })
         .attr("width",x.bandwidth())
         .style("stroke", (d) => (districts.includes(d.district)) ? "#fcb628" : "none")
-        .style("stroke-width", "1.0px")
+        .style("stroke-width", "2.0px")
         .on("click", (event,d) => {
             console.log(d.district);
             clicked(d.district);
