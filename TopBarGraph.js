@@ -7,7 +7,7 @@ export default function barGraph(container){
         1000 -
         margin.left -
         margin.right,
-    height = 300 - margin.top - margin.bottom;
+    height = 280 - margin.top - margin.bottom;
     var districts = []
     
 
@@ -100,6 +100,12 @@ export default function barGraph(container){
         .attr("width",x.bandwidth())
         .style("stroke", (d) => (districts.includes(d.district)) ? "#fcb628" : "none")
         .style("stroke-width", "2.0px")
+        .on("mouseover", (l, d) => {
+            d3.select(event.currentTarget).style("fill", "#fcb628");
+        })
+        .on("mouseout", (l, d) => {
+            d3.select(event.currentTarget).style("fill", "#40048d");
+        })
         .on("click", (event,d) => {
             console.log(d.district);
             clicked(d.district);

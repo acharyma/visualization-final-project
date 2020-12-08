@@ -26,15 +26,13 @@
 
 
 
-           <h2 style="color: #40048d;"><u>About the Visualization</u></h2>
 
            <div>
-               <p>
-                   The Bar Graph plots the Income Per Capita for each of the different district in Nepal. The bar graph has a sort function that toggles between ascending and descending order.
-                   When a Bar is clicked, that district gets highlighted on the bar graph, and the line chart displays the progression of dropout rates in that district throughout the different grades. We set it to default to Kathmandu, Nepal because it is the capital city/district of the country.
-                   The selected district are also saved for when the map is revealed.
-               </p>
-               <h2>Click on the Bar Graph to see the dropout rates in the district by grade! This will also save and highlight the district when the map is revealed and on the Bar Graph as a "District of Interest"</h2>
+               
+               <div>
+                   <h3 id="area-of-interest">The district of interest are: none selected</h3>
+
+               </div>
            </div>
 
 
@@ -53,8 +51,8 @@
             
 
             <div class="legend-container">
-                <h3 class="temporary-hidden">The following map is encoded by <b>Life Expectancy Per District</b> and the <b>"Districts of Interest"</b> from the bar graph is highlighted with the same color as the border color on the bar graph.</h3>
-                <div><p id="temporary-hidden">Clicking on the district will make the line chart above change to that district and change it's border color to indicate that that area has been investigated. Hovering over the district reveals more information about the district.</p></div>
+                <div><h3 id="temporary-hidden"></h3></div>
+                <h3 class="temporary-hidden">The Scale for Life Expectancy</h3>
             </div>
             
             <div class="chart-container3">

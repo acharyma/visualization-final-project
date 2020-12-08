@@ -78,7 +78,7 @@ export default function RegionalMap(container){
         .style("stroke", (d) => listOfSelected.includes(d.properties.VARNAME_3) ? "#fcb628" : "none")
         .style("stroke-width", "0.47px")
         .on("mouseover", (l, d) => {
-            d3.select(event.currentTarget).style("fill", "pink");
+            d3.select(event.currentTarget).style("fill", "#fcb628");
             const pos = d3.pointer(event, window);
             d3
                 .select(".tooltip")
@@ -132,7 +132,7 @@ export default function RegionalMap(container){
             console.log(d);
             console.log(d.properties.VARNAME_3);
             clicked(d.properties.VARNAME_3);
-            d3.select(event.currentTarget).style("stroke", "pink").style("stroke-width", "0.47px");
+            d3.select(event.currentTarget).style("stroke", "#fcb628").style("stroke-width", "0.47px");
 
         });
         ;

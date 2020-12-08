@@ -39,6 +39,9 @@ d3.csv('life-expectancy-income_2019.csv', d3.autoType)]).then(([map, data])=>{
     console.log(map);
     document.getElementById("reveal").addEventListener("click", function() {
 
+        document.getElementById("temporary-hidden").innerHTML = "The district of interest are " + listOfDistricts
+
+
         document.querySelector(".temporary-hidden").style.display = "block";
         document.getElementById("temporary-hidden").style.display = "block";
 
@@ -60,6 +63,7 @@ d3.csv('life-expectancy-income_2019.csv', d3.autoType)]).then(([map, data])=>{
             console.log("clickedDistrict on main!! " + clicked);
             if(!listOfDistricts.includes(clicked)){
                 listOfDistricts.push(clicked);
+                document.getElementById("area-of-interest").innerHTML = "The district of interest are " + listOfDistricts
                 console.log(listOfDistricts)
             }
             lc.update(data2, clicked);
@@ -68,6 +72,11 @@ d3.csv('life-expectancy-income_2019.csv', d3.autoType)]).then(([map, data])=>{
 
         rm.newOn("clicked", (clicked) => {
             clickedDistrict = clicked;
+            if(!listOfDistricts.includes(clicked)){
+                listOfDistricts.push(clicked);
+                document.getElementById("temporary-hidden").innerHTML = "The district of interest are " + listOfDistricts
+                console.log(listOfDistricts)
+            }
             lc.update(data2, clicked);
         })
 
